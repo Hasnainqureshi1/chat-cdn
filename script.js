@@ -1,30 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const chatContainer = document.getElementById('chat-container');
-    if (chatContainer) {
-        chatContainer.innerHTML = `
-            <div class="chat-box">
-                <div class="chat-header">Chat</div>
-                <div class="chat-body"></div>
-                <div class="chat-footer">
-                    <input type="text" class="chat-input" placeholder="Type a message...">
-                    <button class="chat-send">Send</button>
-                </div>
-            </div>
-        `;
+    const chatBotContainer = document.getElementById('chat-bot-container');
+    const chatBotBtn = document.getElementById('chat-bot-btn-id');
+    const closeChat = document.getElementById('close-chat');
 
-        // Add event listener for send button
-        const sendButton = chatContainer.querySelector('.chat-send');
-        sendButton.addEventListener('click', function() {
-            const input = chatContainer.querySelector('.chat-input');
-            const message = input.value.trim();
-            if (message) {
-                const chatBody = chatContainer.querySelector('.chat-body');
-                const messageElement = document.createElement('div');
-                messageElement.className = 'chat-message';
-                messageElement.textContent = message;
-                chatBody.appendChild(messageElement);
-                input.value = '';
-            }
-        });
-    }
+    chatBotBtn.addEventListener('click', function() {
+        chatBotContainer.style.display = 'flex';
+        chatBotBtn.style.display = 'none'; // Hide the button when chat UI is open
+    });
+
+    closeChat.addEventListener('click', function() {
+        chatBotContainer.style.display = 'none';
+        chatBotBtn.style.display = 'flex'; // Show the button when chat UI is closed
+    });
 });
