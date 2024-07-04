@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <button class="chat-bot-btn" id="chat-bot-btn-id">
+        <i class="fa fa-comments"></i> Chat Now
+    </button>
+
+    <div class="chat-bot-container" id="chat-bot-container">
+        <div class="chat-ui-bot">
+            <div class="chat-ui-bot-header">
+                <h3>Chat Bot</h3>
+                <i class="fa fa-times" id="close-chat"></i>
+            </div>
+            <div class="chat-ui-bot-body">
+                <!-- Sample conversation -->
+                <div class="message user1" id="user1-msg1">
+                    <p>Hello! How can I help you today?</p>
+                </div>
+                <div class="message user2" id="user2-msg1">
+                    <p>I have a question about my order.</p>
+                </div>
+                <div class="message user1" id="user1-msg2">
+                    <p>Sure, I'd be happy to assist you. Can you please provide your order number?</p>
+                </div>
+                <div class="message user2" id="user2-msg2">
+                    <p>My order number is #12345.</p>
+                </div>  <div class="message user1" id="user1-msg1">
+                    <p>Hello! How can I help you today?</p>
+                </div>
+                <div class="message user2" id="user2-msg1">
+                    <p>I have a question about my order.</p>
+                </div>
+                <div class="message user1" id="user1-msg2">
+                    <p>Sure, I'd be happy to assist you. Can you please provide your order number?</p>
+                </div>
+                <div class="message user2" id="user2-msg2">
+                    <p>My order number is #12345.</p>
+                </div>
+            </div>
+            <div class="chat-ui-bot-footer">
+                <input type="text" id="user-input" placeholder="Type your message here...">
+                <button id="send-btn"><i class="fa fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
