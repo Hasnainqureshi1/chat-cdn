@@ -7,7 +7,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: all 0.3s ease;
-    /* display: none; Hidden by default */
+    display: none; /* Hidden by default */
     width: 320px;
     height: 500px;
 }
