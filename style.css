@@ -10,6 +10,7 @@
     display: none; /* Hidden by default */
     width: 320px;
     height: 500px;
+    z-index:9999;
 }
 
 .chat-ui-bot {
